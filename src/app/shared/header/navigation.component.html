@@ -1,0 +1,65 @@
+<!-- ============================================================== -->
+<!-- toggle and nav items -->
+<!-- ============================================================== -->
+<ul class="navbar-nav float-start me-auto">
+  <li class="nav-item">
+    <a class="nav-link waves-effect waves-dark" href="/dashboard"> Starter </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link waves-effect waves-dark" href="/about"> About </a>
+  </li>
+  <!-- ============================================================== -->
+  <!-- create new -->
+  <!-- ============================================================== -->
+  <li class="nav-item d-none d-md-block" ngbDropdown placement="bottom-end">
+    <a
+      ngbDropdownToggle
+      class="nav-link waves-effect waves-dark"
+      href="javascript:void(0)"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      <span>Products</span>
+    </a>
+    <div ngbDropdownMenu>
+      <a class="dropdown-item" routerLink="/card">All Products</a>
+      <a class="dropdown-item"routerLink="/button">All categories</a>
+     
+    </div>
+  </li>
+</ul>
+<!-- ============================================================== -->
+<!-- Right side toggle and nav items -->
+<!-- ============================================================== -->
+<ul class="navbar-nav float-end">
+  <!-- ============================================================== -->
+  <!-- User profile and search -->
+  <!-- ============================================================== -->
+  <li class="nav-item" ngbDropdown placement="bottom-end">
+    <a
+      ngbDropdownToggle
+      class="nav-link waves-effect waves-dark pro-pic"
+      href="javascript:void(0)"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      <img
+        src="assets/images/users/user4.jpg"
+        alt="user"
+        class="rounded-circle"
+        width="31"
+      />
+      <span class="ms-2">Milad</span>
+    </a>
+    <div class="dropdown-menu-right" ngbDropdownMenu>
+      <a class="dropdown-item"  href="/dashboard"> My Profile</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#"> Logout</a>
+    </div>
+  </li>
+  <!-- ============================================================== -->
+  <!-- User profile and search -->
+  <!-- ============================================================== -->
+</ul>

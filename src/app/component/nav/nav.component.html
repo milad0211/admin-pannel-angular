@@ -1,0 +1,102 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">About Product</h4>
+    <hr>
+    <p class="card-subtitle text-muted"></p>
+      <ul>
+        <li><strong>Installation and Setup:</strong> First, download and install the program from the official source. After installation, open the program and follow the initial setup steps. Ensure you grant all necessary permissions for the program to function properly.</li>
+        <li><strong>Familiarize Yourself with the User Interface:</strong> Once logged in, take some time to explore the user interface. Review the buttons, menus, and available options to easily navigate through the various features.</li>
+        <li><strong>Refer to Help and Documentation:</strong> If needed, consult the help and documentation available within the program. These resources can assist you in understanding the different functions and features of the program better.</li>
+        <li><strong>Personalize Settings:</strong> Use the settings section to customize the program according to your preferences. Adjust options such as language, notifications, and display settings to enhance your user experience.</li>
+        <li><strong>Test the Features:</strong> Experiment with the different features of the program. This will help you become familiar with the available capabilities and allow you to utilize them effectively.</li>
+        <li><strong>Troubleshooting and Support:</strong> In case of any issues, refer to the support section or use the documentation and frequently asked questions to troubleshoot your problems.</li>
+        <li><strong>Regular Updates:</strong> Make sure to regularly update the program to benefit from the latest features and security improvements. Updates can enhance program performance and resolve any potential issues.</li>
+        <li><strong>Share Your Feedback:</strong> Share your thoughts and suggestions with us. Your feedback can help us improve the program and provide better services.</li>
+    </ul>
+    
+    
+    <div class="my-4"></div>
+    <a href="http://setaksoft.com/" class="btn btn-primary"
+      >Ordered by Setak Technology Company</a
+    >
+  </div>
+</div>
+
+<div class="row">
+  <!-- ==================================-->
+  <!-- ======= Basic Nav ===== -->
+  <!-- ==================================-->
+  <div class="col-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Support</h4>
+      </div>
+      <div class="card-body border-top">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+          <li [ngbNavItem]="1">
+            <button ngbNavLink>Support</button>
+            <ng-template ngbNavContent>
+              <p>
+                The software support for this application is designed to provide
+                you with a smooth and hassle-free experience. Our support team
+                is ready to answer your questions, identify and resolve any
+                issues, and offer guidance to help you maximize efficiency and
+                productivity. Our goal is to ensure that any questions or
+                concerns you have are addressed quickly and professionally, so
+                you can feel confident in using the software. Through the
+                support section, you can also share your suggestions and needs
+                with us, helping us continuously improve the experience for you
+                and other users.
+              </p>
+            </ng-template>
+          </li>
+          <li [ngbNavItem]="2">
+            <button ngbNavLink>Email</button>
+            <ng-template ngbNavContent>
+              <p>
+                This email is dedicated to providing support and assistance to
+                you, our valued customer. If you encounter any issues, have
+                questions, or need guidance while using our software, please do
+                not hesitate to reach out to us through this email. Our support
+                team is here to help and ensure that you have a positive and
+                hassle-free experience with our services. We also appreciate any
+                feedback, suggestions, or concerns you may have, as they play a
+                crucial role in helping us improve our offerings. We believe in
+                the importance of your voice and truly value your collaboration.
+                <br />
+                <b> Milad.mashayekhi1&#64;gmail.com</b>
+              </p>
+            </ng-template>
+          </li>
+          <li [ngbNavItem]="3">
+            <button ngbNavLink>Call</button>
+            <ng-template ngbNavContent>
+              <p>
+                You can also reach out for support by calling our emergency
+                hotline at this number. Our dedicated team is available to
+                assist you with any urgent issues you may encounter, ensuring
+                that you receive prompt and effective help whenever you need it.
+                We are committed to providing you with the best possible
+                support, so don't hesitate to contact us if you require
+                immediate assistance.
+                <br />
+                <b> +98 939 432 1320 </b>
+              </p>
+            </ng-template>
+          </li>
+        </ul>
+
+        <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+        <div class="bg-light p-3 rounded">Active: {{ active }}</div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- ======= Alternative markup ===== -->
+  <!-- ==================================-->
+
+  <!-- ==================================-->
+  <!-- ======= Vertical pills ===== -->
+  <!-- ==================================-->
+</div>
